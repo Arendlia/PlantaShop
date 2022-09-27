@@ -19,7 +19,7 @@ app.get('/register', (request, response) => {
     response.render('pages/register')
 })
 
-app.get('/forgotpaswd', (request, response) => {
+app.get('/forgotpassword', (request, response) => {
     response.render('pages/forgotpaswd')
 })
 
