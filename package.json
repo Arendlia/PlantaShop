@@ -5,13 +5,18 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch assets/scss/style.scss public/css/style.css"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.8",
+    "embla-carousel": "^7.0.3",
     "express": "^4.18.1",
-    "nodemon": "^2.0.20"
+    "material-components-web": "^14.0.0",
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20",
+    "sass": "^1.55.0"
   }
 }
