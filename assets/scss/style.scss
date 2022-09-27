@@ -5,6 +5,12 @@
 
 body {
     background-color: #FDFFF8;
+    font-family: $font-text;
+    font-size: $font-textSize;
+    background: $primary-color;
+    color: #000;
+    min-height: 100vh;
+    margin-bottom: 150px;
 }
 
 
@@ -138,3 +144,20 @@ text-decoration: underline;
   img {
     padding-left: 10%;
   }
+//Imports
+@import 'reset';
+@import 'mixins';
+@import 'variables';
+@import 'home';
+
+//Globals
+
+h1, h2, h3 {
+    font-family: $font-title;
+    font-size: $font-titleSize;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
