@@ -1,0 +1,25 @@
+//Imports
+@import 'reset';
+@import 'mixins';
+@import 'variables';
+@import 'home';
+
+//Globals
+body{
+    font-family: $font-text;
+    font-size: $font-textSize;
+    background: $primary-color;
+    color: #000;
+    min-height: 100vh;
+    margin-bottom: 150px;
+}
+
+h1, h2, h3 {
+    font-family: $font-title;
+    font-size: $font-titleSize;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
