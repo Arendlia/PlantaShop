@@ -10,11 +10,14 @@
 <main>
     <div class="jumbotron">
         <h1>products</h1>
+        <% products.forEach(product => { %>
+            <%-product.name %>
+            <h2><%= product.name %></h2>
+            <img src="<%= product.image %>" alt="Plante <%= product.id %>">
+            <p><%= product.description %></p>
+            <p><%= product.price %></p>
+           <% }) %>
+        
     </div>
 </main>
 
-<footer>
-</footer>
-
-</body>
-</html>

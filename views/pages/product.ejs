@@ -8,9 +8,15 @@
 </header>
 
 <main>
-    <div class="jumbotron">
-        <h1>product</h1>
-    </div>
+        <section class="container"></section>
+            <h1>product</h1>
+                <div class="card">
+                <h2><%= product.name %></h2>
+                <img src="<%= product.image %>" alt="Plante <%= product.id %>">
+                <p><%= product.description %></p>
+                <p><%= product.price %></p>
+            </div>
+        </section>
 </main>
 
 <footer>
