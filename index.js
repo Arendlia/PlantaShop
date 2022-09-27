@@ -5,6 +5,8 @@ const app = express();
 //    response.end('Hello World')
 //})
 
+app.use(express.static('public'))
+
 app.set('view engine', 'ejs');
 
 app.get('/', (request, response) => {
