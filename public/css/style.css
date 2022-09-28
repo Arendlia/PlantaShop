@@ -105,7 +105,6 @@ table {
 
 .slider {
   position: relative;
-  background-color: #f7f7f7;
   margin-top: 20px;
   max-width: 670px;
   margin-left: auto;
@@ -138,8 +137,10 @@ table {
 }
 
 .card {
-  background: #ececec;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 20px 100px grey;
   padding: 20px;
+  border-radius: 20px;
 }
 .card_content {
   display: flex;
@@ -337,20 +338,29 @@ input[type=submit]:hover {
   padding-left: 10%;
 }
 
+.title_user_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+}
+
 .containerAccordion {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .list {
   width: 350px;
-  background-color: #fff;
   border-radius: 5px;
 }
 
 .nav {
+  background-color: #FFFFFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -364,7 +374,7 @@ input[type=submit]:hover {
 .form-list {
   position: absolute;
   opacity: 0;
-  background-color: #fff;
+  background-color: #FFFFFF;
   text-align: left;
   border-radius: 8px;
   box-shadow: 0.5px 0.5px 5px 0px grey;
@@ -400,7 +410,7 @@ input[type=submit]:hover {
 
 form .txt_field_list {
   position: relative;
-  border-bottom: 2px solid #adadad;
+  border-bottom: 2px solid grey;
   margin: 30px 0;
 }
 
@@ -461,6 +471,23 @@ form .txt_field_list {
   transform: rotate(-180deg);
 }
 
+.btn-save {
+  background-color: #96D6A4;
+  width: 350px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 16px;
+  gap: 6px;
+  margin-top: 20px;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -475,21 +502,28 @@ body {
 }
 
 .appBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.appBar .appBar {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 370px;
   height: 80px;
   background-color: #FFFFFF;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 20px;
   box-shadow: 0.5px 0.5px 10px 0px grey;
   z-index: 1;
+  bottom: 20px;
 }
-.appBar .icon a {
+.appBar .appBar .icon a {
   color: black;
+  font-size: 20px;
 }
 
 h1, h2, h3 {
