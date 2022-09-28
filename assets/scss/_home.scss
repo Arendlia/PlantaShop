@@ -1,5 +1,6 @@
 .main {
-    padding: 0px 15px;
+    padding: 100px 15px;
+    
 
     &_head {
         display: flex;
@@ -70,6 +71,8 @@
     margin-left: auto;
     margin-right: auto;
 
+
+
     &__viewport {
         overflow: hidden;
         width: 100%;
@@ -97,13 +100,20 @@
         min-width: 100%;
         margin-right: 10px;
         overflow: hidden;
+        border-radius: 20px;
+
+
+
         // height: 190px;
     }
 }
 
 .card {
-    background: #fff;
+    background: rgb(236, 236, 236);
     padding: 20px;
+
+
+
 
     &_content {
         display: flex;
