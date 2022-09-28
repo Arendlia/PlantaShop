@@ -71,6 +71,8 @@
     margin-left: auto;
     margin-right: auto;
 
+
+
     &__viewport {
         overflow: hidden;
         width: 100%;
@@ -98,14 +100,20 @@
         min-width: 100%;
         margin-right: 10px;
         overflow: hidden;
+        border-radius: 20px;
+
+
+
         // height: 190px;
     }
 }
 
 .card {
-    background: #fff;
+    background: rgb(236, 236, 236);
     padding: 20px;
-    box-shadow: 0.5px 0.5px 10px 0px black;
+
+
+
 
     &_content {
         display: flex;
