@@ -2,6 +2,7 @@ const http = require('http');
 const express = require('express')
 const app = express();
 const products = require('./data.js');
+const categories = require('./model/categories.js');
 const { userInfo } = require('os');
 //const server = http.createServer((request, response)=>{
 //    response.end('Hello World')
@@ -12,7 +13,10 @@ app.set('view engine', 'ejs');
 
 
 app.get('/', (request, response) => {
-    response.render('pages/index')
+    response.render('pages/index',{
+        products: products, 
+        categories: categories
+    });
 })
 
 app.get('/login', (request, response) => {
