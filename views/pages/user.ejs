@@ -242,8 +242,15 @@
           </div>
       </div>
   </div>
-
-    
+    <form method="post" action="/user">
+      <input type="text" name="plant[name]">
+      <input type="text" name="plant[description]">
+      <input type="submit" value="Submit">
+  </form>
+  <% user.plants.forEach(plant => { %>
+    <h2><%= plant?.name %></h2>
+    <% }) %> 
+  </div> 
 </main>
 
 <footer>
