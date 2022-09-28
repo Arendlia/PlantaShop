@@ -1,16 +1,26 @@
-* {
-    margin: 0;
-    padding: 0;
+//Imports
+@import 'reset';
+@import 'mixins';
+@import 'variables';
+
+//Page's style
+@import 'pages/home';
+@import 'pages/login';
+@import 'pages/user';
+@import 'pages/product';
+
+:root {
+    --vh: 100vh;
 }
 
 body {
     background-color: #FDFFF8;
-    // font-family: $font-text;
-    // font-size: $font-textSize;
-    // background: $primary-color;
+    font-family: $font-text;
+    font-size: $font-textSize;
+    background: $primary-color;
     color: #000;
-    min-height: 160vh;
-    margin-bottom: 150px;
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
 }
 
 
@@ -30,27 +40,32 @@ body {
     z-index: 1;
 
     .icon a {
-      color: black;
+        color: black;
     }
 }
 
 
-//Imports
-@import 'reset';
-@import 'mixins';
-@import 'variables';
-@import 'home';
-@import 'login';
-@import 'user';
-
 //Globals
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: $font-title;
     font-size: $font-titleSize;
 }
 
-a, a:visited {
+a,
+a:visited {
     text-decoration: none;
     color: inherit;
+}
+
+button,
+.btn,
+.cta {
+    border: none;
+    padding: 14px 16px;
+    border-radius: 5px;
+    background: $secondary-color;
+    color: #fff;
 }
