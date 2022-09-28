@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
+    <%- include('../partials/head'); %>
 </head>
 <body class="container">
 
-<header>
-</header>
-
 <main>
-    <div class="jumbotron">
-        <h1>Login</h1>
-    </div>
+    <div class="center">
+        <img class="logo" src="/img/logoPlantaShop.png" alt="">
+        <form method="post">
+          <div class="txt_field">
+            <input type="text" required />
+            <span></span>
+            <label>Username</label>
+          </div>
+          <div class="txt_field">
+            <input type="password" required />
+            <span></span>
+            <label>Password</label>
+          </div>
+          <div class="pass"><a href="/forgotpassword">Forgot Password?</a></div>
+        
+          <input type="submit" value="Login"/>
+          <div class="singup_link">Don’t have an account yet? Register <a href="/register">here</a></div>
+        </form>
+      </div>
 </main>
-
-<footer>
-</footer>
-
-</body>
-</html>

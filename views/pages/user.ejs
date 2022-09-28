@@ -1,20 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
+    <%- include('../partials/head'); %>
 </head>
 <body class="container">
 
 <header>
+    <%- include('../partials/header'); %>
 </header>
 
 <main>
-    <div class="jumbotron">
-        <h1>user</h1>
+    <div class="main_head">
+        <div class="icon-logout">
+            <a href="/login">
+            <i class="fa-solid fa-arrow-right-from-bracket fa-xl"></i>
+            </a>
+        </div>
+        <a href="/">
+            <img src="img/logo.png" alt="">
+        </a>
+        <div class="icon-hopital">
+            <i class="fa-sharp fa-solid fa-user-nurse fa-xl"></i>
+        </div>
     </div>
+    <div class="containerAccordion">
+    <div class="list">
+        <input type="checkbox" id="switch">
+        <div class="nav">
+          <span>Profile Info</span>
+          <label for="switch">
+            <i class="fas fa-angle-down"></i>
+          </label>
+        </div>
+        <div class="product-list">
+            <form method="post">
+                <div class="txt_field">
+                  <input type="text" required />
+                  <span></span>
+                  <label>Username</label>
+                </div>
+                <div class="txt_field">
+                  <input type="password" required />
+                  <span></span>
+                  <label>Password</label>
+                </div>
+            </form>
+        </div>
+        <div class="list">
+            <input type="checkbox" id="switch">
+            <div class="nav">
+              <span>Payment</span>
+              <label for="switch">
+                <i class="fas fa-angle-down"></i>
+              </label>
+            </div>
+            <div class="product-list">
+                <form method="post">
+                    <div class="txt_field">
+                      <input type="text" required />
+                      <span></span>
+                      <label>Username</label>
+                    </div>
+                    <div class="txt_field">
+                      <input type="password" required />
+                      <span></span>
+                      <label>Password</label>
+                    </div>
+                </form>
+            </div>
+            <div class="list">
+                <input type="checkbox" id="switch">
+                <div class="nav">
+                  <span>Password & Security</span>
+                  <label for="switch">
+                    <i class="fas fa-angle-down"></i>
+                  </label>
+                </div>
+                <div class="product-list">
+                    <form method="post">
+                        <div class="txt_field">
+                          <input type="text" required />
+                          <span></span>
+                          <label>Username</label>
+                        </div>
+                        <div class="txt_field">
+                          <input type="password" required />
+                          <span></span>
+                          <label>Password</label>
+                        </div>
+                    </form>
+                </div>
+    </div>
+</div>
+    
 </main>
 
 <footer>
+    <%- include('../partials/footer'); %>
 </footer>
-
-</body>
-</html>
