@@ -40,7 +40,7 @@
             }
 
             &_info {
-                margin-bottom: 20px;
+                margin-bottom: 40px;
 
                 p {
                     &:first-child {
@@ -121,12 +121,12 @@
                 }
 
                 &__card {
+                    background: #fff;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     width: 250px;
                     height: 250px;
-                    background: #fff;
                     padding: 20px;
                     border-radius: 20px;
                     box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.2);
