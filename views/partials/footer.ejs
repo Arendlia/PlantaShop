@@ -1,12 +1,15 @@
 <script src="https://kit.fontawesome.com/ee9e2feb15.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
 
+
 <script>
   const wraps = document.querySelectorAll(".slider");
   wraps.forEach(wrap => {
     const viewPort = wrap.querySelector(".slider__viewport");
     const embla = EmblaCarousel(viewPort, {
-      skipSnaps: false
+      '(max-width: 425px)': { skipSnaps: false },
+      '(min-width: 768px)': { loop: false }
+      
     });
   });
 

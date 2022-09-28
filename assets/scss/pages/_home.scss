@@ -5,19 +5,54 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        
+
+        @include media(">=tablet") {
+            flex-direction: row-reverse;
+        }
 
         .icon-logout {
-            transform: rotate(-180deg);
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 12px;
+
+            .hopital {
+                display: none;
+                @include media(">=tablet") {
+                    display: inline-block;
+                }
+            }
+
+            .main_search, .mobile {
+                display: none;
+                padding: 0;
+                margin-right: 20px;
+                @include media(">=tablet") {
+                    display: inline-block;
+                }
+            }
         }
 
         img {
             width: 110px;
         }
+
+        .icon-hopital {
+            @include media(">=tablet") {
+                display: none;
+            }
+        }
     }
 
-    &_search {
+    &_search,
+    .desktop {
         padding-top: 15px;
 
+        @include media(">=tablet") {
+            display: none;
+        }
+        
         .search-wrapper {
             border-radius: 8px;
             background-color: #fff;
@@ -29,6 +64,10 @@
             max-width: 480px;
             box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.3);
             overflow: hidden;
+
+            @include media(">=tablet") {
+                height: 2rem;
+            }
 
             svg {
                 padding-left: 12px;
@@ -55,7 +94,26 @@
 
 
 .main_section_plants {
+    margin-top: 50px;
     margin-bottom: 50px;
+    @include media(">=tablet") {
+        margin-top: 80px;
+    }
+
+    h1 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 120%;
+        @include media(">=phone") {
+            text-align: center;
+        }
+    }
+
+    hr {
+        @include media(">=phone") {
+            display: none;
+        }
+    }
 
     &_all,
     &_Indoor,
@@ -73,11 +131,21 @@
         margin-right: auto;
         display: flex;
         align-items: center;
+        
+        @include media(">=tablet") {
+            margin: 0;
+            max-width: 100%;
+        }
+        
 
         &__viewport {
             overflow: hidden;
             width: 100%;
             height: 100%;
+
+            @include media(">=tablet") {
+                overflow: auto;
+            }
         }
 
         &__viewport.is-draggable {
@@ -103,14 +171,19 @@
             position: relative;
             height: 95%;
             min-width: 95%;
-            margin-right: 10px;
+            margin-right: 20px;
             // overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 10px grey;
             background: #fff;
+            
+            @include media(">tablet") {
+                min-width: 400px;
+            }
+            
             
             .card {
                 display: flex;
@@ -159,6 +232,7 @@
 
                     .rate {
                         flex-grow: 1;
+
                         .rating {
                             display: flex;
                             justify-content: flex-end;

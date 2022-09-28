@@ -73,3 +73,26 @@ button.cta {
         font-weight: 500;
     }
 }
+
+@include media(">=tablet") {
+    .appBar {
+        background: rgba(255, 255, 255, 0.98);
+        z-index: 100;
+        position: fixed;
+        bottom: 2rem;
+        left: 0px;
+        right: 0px;
+        width: 30vw;
+        border-radius: 1.5rem;
+        pointer-events: all;
+        filter: drop-shadow(rgba(0, 0, 0, 0.12) 0px 1px 3px);
+        margin: 0 auto;
+        padding: 0.25rem 0.3125rem;
+        height: 3rem;
+    }
+
+    .main {
+        max-width: 1366px;
+        margin: 0 auto;
+    }
+}
