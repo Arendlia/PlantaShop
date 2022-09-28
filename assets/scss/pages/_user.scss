@@ -39,6 +39,7 @@
       cursor: pointer;
       width: 350px;
   }
+  
   .nav .fas{
       transform: rotate(0deg);
       transition: .2s;
@@ -136,6 +137,18 @@
   font-size: $font-titleSize;
   font-family: $font-title;
   color: #fff;
+}
+
+.form_list_user {
+  display: flex;
+  justify-content: center;
+
+}
+
+.form_add {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .suggest {

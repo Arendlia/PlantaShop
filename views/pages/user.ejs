@@ -242,15 +242,27 @@
           </div>
       </div>
   </div>
+
+    
+    </div>
+    </div>
+    
+  <div class="form_list_user">
     <form method="post" action="/user">
-      <input type="text" name="plant[name]">
-      <input type="text" name="plant[description]">
-      <input type="submit" value="Submit">
-  </form>
-  <% user.plants.forEach(plant => { %>
-    <h2><%= plant?.name %></h2>
-    <% }) %> 
-  </div> 
+        <div class="txt_field_list">
+          <input type="text" name="plant[name]" />
+          <span></span>
+          <label>Name</label>
+        </div>
+        <div class="txt_field_list">
+          <input type="text" name="plant[description]" />
+          <span></span>
+          <label>Description</label>
+        </div>
+        <button type="submit" class="btn-save">Add plant</button>
+    </form>
+</div>
+
 </main>
 
 <footer>
