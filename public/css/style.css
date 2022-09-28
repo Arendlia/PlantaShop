@@ -354,11 +354,11 @@ input[type=submit]:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #ccc;
+  box-shadow: 0.5px 0.5px 10px 0px grey;
   padding: 10px 15px;
-  border-radius: 5px;
-  height: 30px;
-  margin-top: 10px;
+  border-radius: 10px;
+  height: 40px;
+  margin-top: 15px;
 }
 
 .form-list {
@@ -367,7 +367,7 @@ input[type=submit]:hover {
   background-color: #fff;
   text-align: left;
   border-radius: 8px;
-  box-shadow: 2px 2px 20px 0px grey;
+  box-shadow: 0.5px 0.5px 5px 0px grey;
   transition: 0.4s;
   cursor: pointer;
   width: 350px;
