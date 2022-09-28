@@ -23,8 +23,6 @@ body {
     min-height: calc(var(--vh, 1vh) * 100);
 }
 
-
-
 .appBar {
     position: fixed;
     bottom: 0;
@@ -68,4 +66,9 @@ button,
     border-radius: 5px;
     background: $secondary-color;
     color: #fff;
+
+    &:hover {
+        background: $third-color;
+        font-weight: 500;
+    }
 }

@@ -47,7 +47,7 @@
                         <div class="slider__container">
                             <% products.forEach(product => { %>
                             <div class="slider__slide">
-                                <div class="card">
+                                <a href="/product/<%= product.id %>" class="card">
                                     <div class="card_content">
                                         <div class="info">
                                             <h2><%= product.name %></h2>
@@ -91,7 +91,7 @@
                                             <button>Add to cart</button>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <% }) %>
                         </div>
@@ -106,7 +106,7 @@
                         <div class="slider__container">
                             <% cat.plants.forEach(plant => { %>
                             <div class="slider__slide">
-                                <div class="card">
+                                <a class="card" href="/product/<%= plant.id %>">
                                     <div class="card_content">
                                         <div class="info">
                                             <h2><%= plant.name %></h2>
@@ -151,7 +151,7 @@
                                             <button>Add to cart</button>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <% }) %> 
                         </div>
