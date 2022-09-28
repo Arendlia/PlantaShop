@@ -2,11 +2,21 @@
 <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
 
 <script>
-  const wrap = document.querySelector(".slider");
-  const viewPort = wrap.querySelector(".slider__viewport");
-  const embla = EmblaCarousel(viewPort, {
-    skipSnaps: false
+  const wraps = document.querySelectorAll(".slider");
+  wraps.forEach(wrap => {
+    const viewPort = wrap.querySelector(".slider__viewport");
+    const embla = EmblaCarousel(viewPort, {
+      skipSnaps: false
+    });
   });
+
+  const appHeight = () => {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  window.addEventListener('resize', appHeight)
+  appHeight()
 </script>
 </body>
+
 </html>
